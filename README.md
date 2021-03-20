@@ -1,6 +1,16 @@
 # ID-PFN
 **I**terative **D**enoising Method with **P**attern **F**usion **N**etwork
 
+# Requirements
+pip install -r requirements.txt
+
+python==3.6
+tensorflow==1.13.1
+numpy==1.16.4
+tqdm==4.40.2
+nltk==3.4.5
+matplotlib==3.0.3
+django==3.0.3
 
 
 # Framework
@@ -22,5 +32,9 @@
 
 ![image](https://user-images.githubusercontent.com/42259606/111864113-18dc6d00-899a-11eb-8c6b-da3866e23c58.png)
 
+# Reference
+1. Neural Relation Extraction with Selective Attention over Instances. Yankai Lin, Shiqi Shen, Zhiyuan Liu, Huanbo Luan, Maosong Sun. ACL2016. [paper](http://www.aclweb.org/anthology/P16-1200)
 
+2. Reinforcement Learning for Relation Classification from Noisy Data. Jun Feng, Minlie Huang, Li Zhao, Yang Yang, Xiaoyan Zhu. AAAI2018. [paper](https://tianjun.me/static/essay_resources/RelationExtraction/Paper/AAAI2018Denoising.pdf)
 
+...
