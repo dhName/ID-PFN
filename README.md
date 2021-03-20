@@ -4,23 +4,19 @@
 # Requirements
 pip install -r requirements.txt
 
-python==3.6
-
-tensorflow==1.13.1
-
-numpy==1.16.4
-
-tqdm==4.40.2
-
-nltk==3.4.5
-
-matplotlib==3.0.3
-
-django==3.0.3
+* python==3.6
+* tensorflow==1.13.1
+* numpy==1.16.4
+* tqdm==4.40.2
+* nltk==3.4.5
+* matplotlib==3.0.3
+* django==3.0.3
 
 
 # Framework
+1. Trainning (**I**terative **D**enoising Method)
 ![image](https://user-images.githubusercontent.com/42259606/111864106-08c48d80-899a-11eb-949e-5c7066bca9e2.png)
+2. Neural Network（**P**attern **F**usion **N**etwork）
 ![image](https://user-images.githubusercontent.com/42259606/111864294-feef5a00-899a-11eb-9c49-92f304938755.png)
 
 
