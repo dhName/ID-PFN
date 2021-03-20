@@ -15,12 +15,16 @@ pip install -r requirements.txt
 
 # Framework
 1. Trainning (**I**terative **D**enoising Method)
+
 ![image](https://user-images.githubusercontent.com/42259606/111864106-08c48d80-899a-11eb-949e-5c7066bca9e2.png)
 2. Neural Network（**P**attern **F**usion **N**etwork）
+
 ![image](https://user-images.githubusercontent.com/42259606/111864294-feef5a00-899a-11eb-9c49-92f304938755.png)
 
 
 # metric
+1. precison、recall、F1-score
+
 | 模型 | precision | recall | F1-score |
 | :-----| ----: | :----: | :----: |
 | CNN+ONE| 32.95 | 65.42 | 43.83 |
@@ -32,6 +36,8 @@ pip install -r requirements.txt
 | LSTM+ATT | 35.33 | 65.27 | 45.84 |
 | ID+PFN | 44.75 | **80.61** | **57.55** |
 
+2. P-R curve
+
 ![image](https://user-images.githubusercontent.com/42259606/111864113-18dc6d00-899a-11eb-8c6b-da3866e23c58.png)
 
 # Reference
@@ -39,4 +45,4 @@ pip install -r requirements.txt
 
 2. Reinforcement Learning for Relation Classification from Noisy Data. Jun Feng, Minlie Huang, Li Zhao, Yang Yang, Xiaoyan Zhu. AAAI2018. [paper](https://tianjun.me/static/essay_resources/RelationExtraction/Paper/AAAI2018Denoising.pdf)
 
-...
+3. ...
