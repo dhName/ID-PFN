@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>model_predicion</title>
+    <link rel="icon" href="{% static 'xidianlogo.ico' %} ">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .my_outer {
+            background-color: white;
+
+            height: 600px;
+
+            padding-top: 100px;
+
+            padding-left: 140px;
+            padding-right: 140px;
+        }
+
+        .my_inner {
+            height: 550px;
+            width: 1200px;
+            background-color: darkgray;
+            position: relative;
+        }
+
+        .text_area {
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            font-size: 20px;
+        }
+
+        .bottom {
+            color: black;
+            position: absolute;
+            top: 420px;
+            left: 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body onload="load_model_name()">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <img src="{% static 'xidianlogo.ico' %} " class="navbar-header" width="50px" height="50px" style="position: absolute; left: 50px">
+    <!--<img src="{% static 'founderlogo.ico' %} " class="navbar-header" width="50px" height="50px" style="position: absolute; left: 100px">-->
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://127.0.0.1:8000/index" style="color: white">关系抽取系统</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="http://127.0.0.1:8000/index" style="color: white">主界面</a></li>
+                <li><a href="http://127.0.0.1:8000/parameters_setting" style="color: white">模型参数设置</a></li>
+                <li><a href="http://127.0.0.1:8000/pattern_filters" style="color: white">模式过滤</a></li>
+                <li><a href="http://127.0.0.1:8000/trainning_result" style="color: white">训练结果</a></li>
+                <li class="active"><a href="http://127.0.0.1:8000/model_prediction" style="color: white">模型预测</a></li>
+                <li class="dropdown"></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="my_outer">
+
+    <div class="my_inner">
+        <div class="text_area">
+
+            <div class="select_container">
+                选择模型：<select id="model_names" name="model_names">
+
+            </select>
+
+            </div>
+
+            <br>
+
+            <div>
+                句&nbsp;子&nbsp;:
+                <textarea id="sentence" style="width: 1000px;height: 30px">
+
+                </textarea>
+            </div>
+
+            <br>
+            <div>
+                实体1:
+                <textarea id="entity1" style="width: 300px;height: 30px">
+
+                </textarea>
+            </div>
+
+            <br>
+            <div>
+                1类别:
+                <select name="entity1_type">
+                    <option>PERSON</option>
+                    <option>LOCATION</option>
+                    <option>ORGANIZATION</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                实体2:
+                <textarea id="entity2" style="width: 300px;height: 30px">
+
+                </textarea>
+            </div>
+            <br>
+            <div>
+                2类别:
+                <select name="entity2_type">
+                    <option>PERSON</option>
+                    <option>LOCATION</option>
+                    <option>ORGANIZATION</option>
+                </select>
+            </div>
+            <br>
+        </div>
+
+
+        <div class="bottom" style="">
+            <div>
+                <input style="display: inline-block;width: 100px" type="button" value="预测" onclick="predicion()">
+            </div>
+            <br>
+            <div>
+                预测关系类别：
+                <textarea id="result" style="width: 500px;height: 30px">
+
+            </textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function createXMLHttpRequest() {
+        var xmlHttp;
+        // 适用于大多数浏览器，以及IE7和IE更高版本
+        try {
+            xmlHttp = new XMLHttpRequest();
+        } catch (e) {
+            // 适用于IE6
+            try {
+                xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                // 适用于IE5.5，以及IE更早版本
+                try {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {
+                }
+            }
+        }
+        return xmlHttp;
+    }
+
+    function load_model_name() {
+        var xmlHttp = createXMLHttpRequest();
+
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                var model_names = JSON.parse(xmlHttp.response);
+                var select_ = document.getElementById("model_names");
+                console.log(model_names);
+                for (var model_name in model_names) {
+                    select_.innerHTML += '<option>' + model_names[model_name] + '</option>';
+                }
+            }
+        };
+        xmlHttp.open("POST", "/load_model_name/", true);
+        xmlHttp.send(null);
+    }
+
+    function predicion() {
+        var model_name = document.getElementsByName("model_names").item(0).value;
+
+        var sentence = document.getElementById("sentence").value;
+
+        var entity1 = document.getElementById("entity1").value;
+
+        var entity1_type = document.getElementsByName("entity1_type").item(0).value;
+
+        var entity2 = document.getElementById("entity2").value;
+
+        var entity2_type = document.getElementsByName("entity2_type").item(0).value;
+
+        var xmlHttp = createXMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                var result_area = document.getElementById("result");
+                result_area.innerText = xmlHttp.response;
+            }
+        };
+        xmlHttp.open("POST", "/prediction/", true);
+        xmlHttp.send(JSON.stringify({
+            "model_name": model_name,
+            "sentence": sentence,
+            "entity1": entity1,
+            "entity1_type": entity1_type,
+            "entity2": entity2,
+            "entity2_type": entity2_type
+        }));
+    }
+
+
+</script>
+
+
+</body>
+</html>

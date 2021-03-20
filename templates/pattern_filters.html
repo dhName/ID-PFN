@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pattern_filter</title>
+    <link rel="icon" href="{% static 'xidianlogo.ico' %} ">
+    <meta name="description" content="通过选定一个类别，通过类别动态加载此类别下的pattern(pattern是
+    经过最大频率算法生成，有一定的噪音)，然后开始人工部分筛选，筛选后保存至一个自定义文件名中">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .my_outer {
+            background-color: white;
+
+            height: 600px;
+
+            padding-top: 100px;
+
+            padding-left: 140px;
+            padding-right: 140px;
+        }
+
+        .my_inner {
+            height: 550px;
+            width: 1200px;
+            background-color: darkgray;
+
+            position: relative;
+        }
+
+        .select_container {
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            font-size: 20px;
+        }
+
+        .textarea_container {
+            display: inline-block;
+            position: absolute;
+            top: 120px;
+            left: 50px;
+        }
+
+        .bottom {
+            position: absolute;
+            top: 500px;
+            left: 50px;
+        }
+
+
+    </style>
+</head>
+
+<body onload="load_()">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <img src="{% static 'xidianlogo.ico' %} " class="navbar-header" width="50px" height="50px" style="position: absolute; left: 50px">
+    <!--<img src="{% static 'founderlogo.ico' %} " class="navbar-header" width="50px" height="50px" style="position: absolute; left: 100px">-->
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://127.0.0.1:8000/index" style="color: white">关系抽取系统</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="http://127.0.0.1:8000/index" style="color: white">主界面</a></li>
+                <li><a href="http://127.0.0.1:8000/parameters_setting" style="color: white">模型参数设置</a></li>
+                 <li class="active"><a href="http://127.0.0.1:8000/pattern_filters" style="color: white">模式过滤</a></li>
+                <li><a href="http://127.0.0.1:8000/trainning_result" style="color: white">训练结果</a></li>
+                <li><a href="http://127.0.0.1:8000/model_prediction" style="color: white">模型预测</a></li>
+                <li class="dropdown"></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="my_outer">
+    <div class="my_inner">
+        <div class="select_container">
+            <select id="model_name" name="model_name">
+
+            </select>
+            <br>
+
+            <select name="select_type">
+                <option>/business/person/company</option>
+                <option>/location/country/capital</option>
+                <option>/location/location/contains</option>
+                <option>/people/person/nationality</option>
+                <option>/people/person/place_lived</option>
+                <option>/people/deceased_person/place_of_death</option>
+                <option>/location/neighborhood/neighborhood_of</option>
+                <option>/people/person/place_of_birth</option>
+                <option>/people/person/children</option>
+                <option>/business/company/founders</option>
+            </select>
+            <input type="button" value="开始筛选此类别模式" onclick="begin_filter()">
+
+        </div>
+
+        <div class="textarea_container">
+            <textarea id="text_pattern" style="height: 350px;width: 1100px">js根据selece的optio动态返回pattern  \r\n</textarea>
+        </div>
+
+        <div class="bottom" style="color: black">
+            <input type="button" value="模式筛选完成" onclick="finish_filter()">&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" value="开始训练" onclick="train()">
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function createXMLHttpRequest() {
+        var xmlHttp;
+        // 适用于大多数浏览器，以及IE7和IE更高版本
+        try {
+            xmlHttp = new XMLHttpRequest();
+        } catch (e) {
+            // 适用于IE6
+            try {
+                xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                // 适用于IE5.5，以及IE更早版本
+                try {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {
+                }
+            }
+        }
+        return xmlHttp;
+    }
+
+    function load_() {
+        var xmlHttp = createXMLHttpRequest();
+
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                var parameters_filenames = JSON.parse(xmlHttp.response);
+                var select_ = document.getElementById("model_name");
+                for(var parameters_filename in parameters_filenames){
+                    select_.innerHTML+='<option>'+parameters_filenames[parameters_filename]+'</option>';
+                }
+            }
+        };
+        xmlHttp.open("POST", "/load_parameters_file/", true);
+        xmlHttp.send(null);
+    }
+
+    function begin_filter() {
+        var model_parameters_filename = document.getElementsByName("model_name");
+        var parameters_filename_html = model_parameters_filename.item(0);
+        var model_name = parameters_filename_html.value;    //先获取select的内容
+
+        var select_type = document.getElementsByName("select_type");
+        var htmlElement = select_type.item(0);
+        var relation_type = htmlElement.value;    //先获取select的内容
+
+        var xmlHttp = createXMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                var text_area = document.getElementById("text_pattern");
+                var response_text = xmlHttp.response;
+
+                text_area.innerHTML=response_text;
+            }
+        };
+        xmlHttp.open("POST", "/pattern_filter/", true);
+        xmlHttp.send(JSON.stringify({
+            "model_name":model_name,
+            "relation_type":relation_type
+        }));
+    }
+
+    function finish_filter() {
+        var model_parameters_filename = document.getElementsByName("model_name");
+        var parameters_filename_html = model_parameters_filename.item(0);
+        var model_name = parameters_filename_html.value;    //先获取select的内容
+
+        var text_area = document.getElementById("text_pattern");
+        var filtered_pattern = text_area.value;
+
+        var select_type = document.getElementsByName("select_type");
+        var htmlElement = select_type.item(0);
+        var pattern_type = htmlElement.value;
+
+        var xmlHttp = createXMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                alert("上传成功");
+            }
+        };
+        xmlHttp.open("POST", "/filtered_pattern_checkout/", true);
+        xmlHttp.send(JSON.stringify(
+            {
+                "model_name":model_name,
+                "pattern_type":pattern_type,
+                "filtered_pattern":filtered_pattern
+            }
+            )
+        );
+    }
+
+    function train() {
+
+        var model_parameters_filename = document.getElementsByName("model_name");
+        var parameters_filename_html = model_parameters_filename.item(0);
+        var model_name = parameters_filename_html.value;    //先获取select的内容
+
+        var xmlHttp = createXMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                alert("后台开始训练...")
+            }
+        };
+        xmlHttp.open("POST", "/train/", true);
+        xmlHttp.send(JSON.stringify({
+            "model_name":model_name
+        }));
+    }
+
+</script>
+
+
+</body>
+</html>

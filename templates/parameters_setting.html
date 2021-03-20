@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="参数设置界面">
+    <title>parameters_setting</title>
+    <link rel="icon" href="{% static 'xidianlogo.ico' %} ">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .my_outer {
+            background-color: white;
+
+            height: 600px;
+
+            padding-top: 100px;
+
+            padding-left: 140px;
+            padding-right: 140px;
+        }
+
+        .my_inner {
+            height: 550px;
+            width: 1200px;
+            background-color: darkgray;
+
+            position: relative;
+        }
+
+        .left {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            width: 450px;
+            height: 400px;
+        }
+
+        .right {
+            position: absolute;
+            left: 550px;
+            top: 50px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .bottom {
+            position: absolute;
+            top: 450px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <img src="{% static 'xidianlogo.ico' %} " class="navbar-header" width="50px" height="50px" style="position: absolute; left: 50px">
+    <!--<img src="{% static 'founderlogo.ico' %} " class="navbar-header" width="50px" height="50px" style="position: absolute; left: 100px">-->
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://127.0.0.1:8000/index" style="color: white">关系抽取系统</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="http://127.0.0.1:8000/index" style="color: white">主界面</a></li>
+                <li class="active"><a href="http://127.0.0.1:8000/parameters_setting" style="color: white">模型参数设置</a></li>
+                <li><a href="http://127.0.0.1:8000/pattern_filters" style="color: white">模式过滤</a></li>
+                <li><a href="http://127.0.0.1:8000/trainning_result" style="color: white">训练结果</a></li>
+                <li><a href="http://127.0.0.1:8000/model_prediction" style="color: white">模型预测</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="my_outer">
+
+    <div class="my_inner">
+        <div class="left">
+            <div style="font-size: 18px">模型相关参数：</div>
+            <br>
+            <div>
+                词向量维度:<input id="word_dim" name="word_dim" value="100">
+            </div>
+            <br>
+            <div>
+                词位置维度:<input id="position_dim" name="position_dim" value="50">
+            </div>
+            <br>
+            <div>
+                词类型维度:<input id="type_dim" name="type_dim" value="50">
+            </div>
+            <br>
+            <div>
+                位置最大值:<input id="pos_max" name="pos_max" value="50">
+            </div>
+            <br>
+            <div>
+                网络单元数:<input id="lstm_dim" name="lstm_dim" value="500">
+            </div>
+        </div>
+
+        <div class="right">
+            <div style="font-size: 18px">
+                训练相关参数：
+            </div>
+            <br>
+            <div>
+                注意力机制权重: <input id="beta" name="beta" value="1">
+            </div>
+            <br>
+            <div>
+                每批次训练数量: <input id="batchsize" name="batchsize" value="128">
+            </div>
+            <br>
+            <div>
+                训练模型衰减: <input id="dropout" name="dropout" value="0.5">
+            </div>
+            <br>
+            <div>
+                训练模型学习率:<input id="lr" name="lr" value="0.001">
+            </div>
+            <br>
+            <div>
+                训练梯度裁剪: <input id="clip" name="clip" value="0">
+            </div>
+            <br>
+            <div>
+                优质模式训练轮次: <input id="first_loop_epoch" name="first_loop_epoch" value="10">
+            </div>
+            <br>
+            <div>
+                总数据的训练轮次: <input id="epoch" name="epoch" value="20">
+            </div>
+            <br>
+            <div>
+                k-means/最大频率: <input id="init_patterns_max" name="init_patterns_max" value="20">
+                <!--优质模式文件：-->
+                <!--<select id="filted_pattern_file_name" name="filted_pattern_file_name">-->
+                    <!--<option>pattern_file1</option>-->
+                    <!--<option>pattern_file2</option>-->
+                    <!--<option>pattern_file3</option>-->
+                <!--</select>-->
+            </div>
+
+
+        </div>
+        <div class="bottom">
+            模型命名:<input id="model_name"  name="model_name">&nbsp;&nbsp;&nbsp;
+            <input type="button" value="保存参数并训练" onclick="setting_parameters()">
+        </div>
+    </div>
+</div>
+
+<script>
+    function createXMLHttpRequest() {
+        var xmlHttp;
+        // 适用于大多数浏览器，以及IE7和IE更高版本
+        try {
+            xmlHttp = new XMLHttpRequest();
+        } catch (e) {
+            // 适用于IE6
+            try {
+                xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                // 适用于IE5.5，以及IE更早版本
+                try {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {
+                }
+            }
+        }
+        return xmlHttp;
+    }
+
+    function setting_parameters() {
+        var word_dim = document.getElementById("word_dim").value;
+
+        var position_dim = document.getElementById("position_dim").value;
+
+        var type_dim = document.getElementById("type_dim").value;
+
+        var pos_max = document.getElementById("pos_max").value;
+
+        var lstm_dim = document.getElementById("lstm_dim").value;
+
+        var beta = document.getElementById("beta").value;
+
+        var batchsize = document.getElementById("batchsize").value;
+
+        var dropout = document.getElementById("dropout").value;
+
+        var lr = document.getElementById("lr").value;
+
+        var clip = document.getElementById("clip").value;
+
+        var first_loop_epoch = document.getElementById("first_loop_epoch").value;
+
+        var epoch = document.getElementById("epoch").value;
+
+        // var pattern_filename = document.getElementsByName("filted_pattern_file_name").item(0).value;
+        var init_patterns_max = document.getElementById("init_patterns_max").value;
+
+        var model_name = document.getElementById("model_name").value;
+
+        var xmlHttp = createXMLHttpRequest();
+
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                alert("上传成功");
+            }
+        };
+        xmlHttp.open("POST", "/setting_parameters/", true);
+        xmlHttp.send(JSON.stringify(
+            {
+                "word_dim":word_dim,
+                "position_dim":position_dim,
+                "type_dim":type_dim,
+                "pos_max":pos_max,
+                "lstm_dim":lstm_dim,
+                "beta":beta,
+                "batchsize":batchsize,
+                "dropout":dropout,
+                "lr":lr,
+                "clip":clip,
+                "first_loop_epoch":first_loop_epoch,
+                "epoch":epoch,
+                "init_patterns_max":init_patterns_max,
+                "model_name":model_name
+            }
+            )
+        );
+    }
+
+</script>
+
+
+</body>
+</html>
