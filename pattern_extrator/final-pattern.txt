@@ -1,0 +1,242 @@
+None:
+and
+and the
+, and
+or
+, not
+at
+, in
+, of
+'s
+, Republican of
+of
+-LRB-
+, the
+in
+to
+from
+;
+,
+, a
+, Democrat of
+----------------------------
+/business/company/founders:
+, the chairman of
+, the chief executive of
+of the
+and
+, a co-founder of
+, chief executive of
+'s chairman ,
+, a founder of
+, chairman of the
+, the chairman of the
+, chairman of
+co-founder
+, the
+'s
+, the founder of
+and Lazaro Hernandez of
+of
+, founder of
+,
+'s founder ,
+----------------------------
+/business/person/company:
+of the
+, the chief executive of
+, chief executive of
+, the chairman of
+, the president of
+, a professor at
+newsman
+, president of
+attorney general ,
+'s chief executive ,
+, president of the
+, chairman of
+'s
+, the founder of
+, the
+of
+'s attorney general ,
+,
+, a
+secretary general ,
+----------------------------
+/location/country/capital:
+'s capital ,
+and
+captured
+on Sunday as Mr. Hadley headed to
+over oil rendered incorrectly a word in a quotation from Vice President Dick Cheney , who had commented on
+, said
+, the capital of the
+, as the clock struck 0 , the streets of
+, which
+that
+that seems to be populated entirely by artists and writers , the film affectionately tweaks the bad manners and complacency of
+, the capital of
+were drawn by the United Nations and originally did not include any of
+from
+, the
+in
+to visit the Yasukuni war shrine in
+and southern
+,
+, a disgruntled teacher and his family move from the country to
+----------------------------
+/location/location/contains:
+prison in
+section of
+and
+region of
+and the
+neighborhood of
+, including
+Heights ,
+Heights , Fort Greene and
+, in southern
+at
+, the capital of
+on
+'s
+in southern
+, the
+in
+to
+,
+, in
+----------------------------
+/location/neighborhood/neighborhood_of:
+section of
+neighborhood of
+, Fort Greene and Clinton Hill , today through Sunday at 0 p.m. , and downtown
+, Fort Greene and Clinton Hill ,
+Heights ,
+Heights , Fort Greene and
+tours , featuring Brooklyn Heights ,
+tours , featuring Brooklyn Heights , Fort Greene and
+and
+, Fort Greene and Clinton Hill , today through Sunday at 0 p.m. ; and downtown
+district of
+area of
+Academy of Music , 00 Lafayette Avenue , at Ashland Place ,
+'s
+, Fort Greene and Clinton Hill , today through Sunday at 0 p.m. , meeting in front of the Marriott , Adams and Tillary Streets , downtown
+neighborhood in
+in
+tours , featuring
+,
+, in
+----------------------------
+/people/deceased_person/place_of_death:
+, a
+'s government in
+under
+'s separatists ,
+restaurant he plans to open with
+loved
+, the
+'s
+to justice will not end the violence in
+had to be deposed by any means necessary ; the administration 's immediate post-0 \/ 00 determination to establish a connection between
+woman known as the
+of
+in
+from
+'s vaunted '' Birds of America '' series , were impressed with a recent lot of his work offered by Sotheby 's in
+, who has been accused of helping to finance the insurgency in
+,
+, in
+, many of them prints and photographs by other artists , including
+ruled
+----------------------------
+/people/person/children:
+, the daughter of
+and
+, the current mayor , not his father ,
+, Debby ,
+, a daughter of Vice President
+, the son of
+, daughter of the actor
+, one of
+, Rachel and Michael ; proud grandmother of
+, Todd , Micol , Naomi ,
+and his descendants :
+, who had been a contractor employee and is the son of Secretary General
+, son of
+, daughter of
+is a model and actress who just starred in and directed the film '' My Dad Is 000 Years Old , '' about her father ,
+was vice president , not a cabinet member , and
+, the president of National Amusements , has doubled the size of the company since taking it over from her father ,
+, a son of
+-LRB- father :
+,
+----------------------------
+/people/person/nationality:
+
+'s foreign minister ,
+'s acting prime minister ,
+of the
+and
+, from
+under
+, one of
+, the former prime minister of
+'s prime minister ,
+'s new president ,
+, the prime minister of
+'s president , Gen.
+'s
+-LRB-
+'s leader ,
+of
+in
+,
+'s president ,
+----------------------------
+/people/person/place_lived:
+, the mayor of
+'s mayor ,
+, a Democrat from
+, an
+, a Republican from
+, the former
+, the governor of
+rapper
+'s
+, Republican of
+, Democrat of
+in
+, the
+of
+, Gov.
+borough president ,
+was born in
+,
+, a
+'s governor ,
+----------------------------
+/people/person/place_of_birth:
+, who was born in
+'s mayor ,
+, Claire Danes gives a flawless performance , and Mr. Martin and
+under
+attorney general ,
+, 00 , of
+, a Republican from
+borough president ,
+rapper
+'s
+in
+'s impeccably assembled ghost story about being alone in the crowded city of
+, the
+of
+to
+from
+was born in
+,
+, a
+, a native of
+----------------------------

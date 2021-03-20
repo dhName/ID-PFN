@@ -1,0 +1,1029 @@
+2020-06-17 11:32:42,116 INFO ------load train data------
+2020-06-17 11:33:21,874 INFO ------load train data------
+2020-06-17 11:33:39,153 INFO config batchsize: 160
+2020-06-17 11:33:39,154 INFO config word_dim: 100
+2020-06-17 11:33:39,154 INFO config position_dim: 50
+2020-06-17 11:33:39,154 INFO config type_dim: 50
+2020-06-17 11:33:39,154 INFO config hidden_dim: 500
+2020-06-17 11:33:39,154 INFO config pos_max: 100
+2020-06-17 11:33:39,154 INFO config redistribution: True
+2020-06-17 11:33:39,154 INFO config attention_regularization: True
+2020-06-17 11:33:39,155 INFO config bootstrap: True
+2020-06-17 11:33:39,155 INFO config zero: True
+2020-06-17 11:33:39,155 INFO config lower: False
+2020-06-17 11:33:39,155 INFO config first_loop_epoch: 10
+2020-06-17 11:33:39,159 INFO config epoch: 50
+2020-06-17 11:33:39,159 INFO config init_patterns_ratio: 0.1
+2020-06-17 11:33:39,159 INFO config init_patterns_max: 20
+2020-06-17 11:33:39,160 INFO config pattern_threshold: 0.5
+2020-06-17 11:33:39,160 INFO config pattern_max: 5
+2020-06-17 11:33:39,160 INFO config beta: 1.0
+2020-06-17 11:33:39,160 INFO config lr: 0.001
+2020-06-17 11:33:39,160 INFO config clip: 5.0
+2020-06-17 11:33:39,160 INFO config lr_method: adam
+2020-06-17 11:33:39,160 INFO config restore: False
+2020-06-17 11:33:39,161 INFO config use_small: False
+2020-06-17 11:33:39,161 INFO config dropout: 0.5
+2020-06-17 11:33:39,161 INFO config pretrained_word: True
+2020-06-17 11:33:39,161 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 11:33:39,161 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 11:33:39,161 INFO config word_num: 53684
+2020-06-17 11:33:39,161 INFO config type_num: 13
+2020-06-17 11:33:39,161 INFO config label_num: 11
+2020-06-17 11:33:39,162 INFO config position_num: 100
+2020-06-17 11:35:52,320 INFO ---Data count---
+2020-06-17 11:35:52,320 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 11:35:52,320 INFO /people/person/nationality                        	8768
+2020-06-17 11:35:52,320 INFO /location/location/contains                       	62891
+2020-06-17 11:35:52,321 INFO /people/person/place_of_birth                     	3304
+2020-06-17 11:35:52,321 INFO /business/company/founders                        	842
+2020-06-17 11:35:52,321 INFO /location/country/capital                         	8447
+2020-06-17 11:35:52,321 INFO /people/person/children                           	513
+2020-06-17 11:35:52,321 INFO all                                               	106103
+2020-06-17 11:35:52,321 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 11:35:52,321 INFO /people/person/place_lived                        	7423
+2020-06-17 11:35:52,321 INFO /business/person/company                          	5903
+2020-06-17 11:35:52,322 INFO ---Badcase count---
+2020-06-17 11:35:52,322 INFO ---Ignore count---
+2020-06-17 11:35:52,322 INFO /business/company/major_shareholders              	297
+2020-06-17 11:35:52,322 INFO /business/company/place_founded                   	412
+2020-06-17 11:35:52,322 INFO /business/company/industry                        	1
+2020-06-17 11:35:52,322 INFO /people/ethnicity/people                          	22
+2020-06-17 11:35:52,323 INFO /location/administrative_division/country         	6496
+2020-06-17 11:35:52,323 INFO /people/person/religion                           	73
+2020-06-17 11:35:52,323 INFO /people/person/ethnicity                          	22
+2020-06-17 11:35:52,323 INFO /sports/sports_team_location/teams                	223
+2020-06-17 11:35:52,323 INFO /sports/sports_team/location                      	223
+2020-06-17 11:35:52,323 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 11:35:52,323 INFO None                                              	260943
+2020-06-17 11:35:52,323 INFO /business/company/advisors                        	47
+2020-06-17 11:35:52,324 INFO /people/person/profession                         	2
+2020-06-17 11:35:52,324 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 11:35:52,324 INFO --------------------------
+
+2020-06-17 11:38:13,984 INFO ------load train data------
+2020-06-17 11:38:31,263 INFO config batchsize: 160
+2020-06-17 11:38:31,263 INFO config word_dim: 100
+2020-06-17 11:38:31,263 INFO config position_dim: 50
+2020-06-17 11:38:31,263 INFO config type_dim: 50
+2020-06-17 11:38:31,263 INFO config hidden_dim: 500
+2020-06-17 11:38:31,263 INFO config pos_max: 100
+2020-06-17 11:38:31,264 INFO config redistribution: True
+2020-06-17 11:38:31,264 INFO config attention_regularization: True
+2020-06-17 11:38:31,264 INFO config bootstrap: True
+2020-06-17 11:38:31,264 INFO config zero: True
+2020-06-17 11:38:31,264 INFO config lower: False
+2020-06-17 11:38:31,264 INFO config first_loop_epoch: 10
+2020-06-17 11:38:31,264 INFO config epoch: 50
+2020-06-17 11:38:31,264 INFO config init_patterns_ratio: 0.1
+2020-06-17 11:38:31,265 INFO config init_patterns_max: 20
+2020-06-17 11:38:31,265 INFO config pattern_threshold: 0.5
+2020-06-17 11:38:31,265 INFO config pattern_max: 5
+2020-06-17 11:38:31,265 INFO config beta: 1.0
+2020-06-17 11:38:31,265 INFO config lr: 0.001
+2020-06-17 11:38:31,265 INFO config clip: 5.0
+2020-06-17 11:38:31,265 INFO config lr_method: adam
+2020-06-17 11:38:31,265 INFO config restore: False
+2020-06-17 11:38:31,266 INFO config use_small: False
+2020-06-17 11:38:31,266 INFO config dropout: 0.5
+2020-06-17 11:38:31,266 INFO config pretrained_word: True
+2020-06-17 11:38:31,266 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 11:38:31,266 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 11:38:31,266 INFO config word_num: 53684
+2020-06-17 11:38:31,266 INFO config type_num: 13
+2020-06-17 11:38:31,266 INFO config label_num: 11
+2020-06-17 11:38:31,267 INFO config position_num: 100
+2020-06-17 11:46:20,829 INFO ------load train data------
+2020-06-17 11:46:38,256 INFO config batchsize: 160
+2020-06-17 11:46:38,256 INFO config word_dim: 100
+2020-06-17 11:46:38,257 INFO config position_dim: 50
+2020-06-17 11:46:38,257 INFO config type_dim: 50
+2020-06-17 11:46:38,257 INFO config hidden_dim: 500
+2020-06-17 11:46:38,257 INFO config pos_max: 100
+2020-06-17 11:46:38,257 INFO config redistribution: True
+2020-06-17 11:46:38,257 INFO config attention_regularization: True
+2020-06-17 11:46:38,257 INFO config bootstrap: True
+2020-06-17 11:46:38,257 INFO config zero: True
+2020-06-17 11:46:38,259 INFO config lower: False
+2020-06-17 11:46:38,259 INFO config first_loop_epoch: 10
+2020-06-17 11:46:38,259 INFO config epoch: 50
+2020-06-17 11:46:38,259 INFO config init_patterns_ratio: 0.1
+2020-06-17 11:46:38,259 INFO config init_patterns_max: 20
+2020-06-17 11:46:38,259 INFO config pattern_threshold: 0.5
+2020-06-17 11:46:38,259 INFO config pattern_max: 5
+2020-06-17 11:46:38,260 INFO config beta: 1.0
+2020-06-17 11:46:38,260 INFO config lr: 0.001
+2020-06-17 11:46:38,260 INFO config clip: 5.0
+2020-06-17 11:46:38,260 INFO config lr_method: adam
+2020-06-17 11:46:38,260 INFO config restore: False
+2020-06-17 11:46:38,260 INFO config use_small: False
+2020-06-17 11:46:38,260 INFO config dropout: 0.5
+2020-06-17 11:46:38,260 INFO config pretrained_word: True
+2020-06-17 11:46:38,261 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 11:46:38,261 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 11:46:38,261 INFO config word_num: 53684
+2020-06-17 11:46:38,261 INFO config type_num: 13
+2020-06-17 11:46:38,261 INFO config label_num: 11
+2020-06-17 11:46:38,261 INFO config position_num: 100
+2020-06-17 11:48:50,697 INFO ---Data count---
+2020-06-17 11:48:50,697 INFO /people/person/nationality                        	8768
+2020-06-17 11:48:50,698 INFO /people/person/place_of_birth                     	3304
+2020-06-17 11:48:50,698 INFO /people/person/children                           	513
+2020-06-17 11:48:50,698 INFO /business/company/founders                        	842
+2020-06-17 11:48:50,698 INFO /location/location/contains                       	62891
+2020-06-17 11:48:50,698 INFO /people/person/place_lived                        	7423
+2020-06-17 11:48:50,698 INFO /business/person/company                          	5903
+2020-06-17 11:48:50,698 INFO all                                               	106103
+2020-06-17 11:48:50,699 INFO /location/country/capital                         	8447
+2020-06-17 11:48:50,699 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 11:48:50,699 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 11:48:50,699 INFO ---Badcase count---
+2020-06-17 11:48:50,699 INFO ---Ignore count---
+2020-06-17 11:48:50,699 INFO /people/ethnicity/people                          	22
+2020-06-17 11:48:50,700 INFO /sports/sports_team_location/teams                	223
+2020-06-17 11:48:50,700 INFO /sports/sports_team/location                      	223
+2020-06-17 11:48:50,700 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 11:48:50,700 INFO None                                              	260943
+2020-06-17 11:48:50,700 INFO /business/company/major_shareholders              	297
+2020-06-17 11:48:50,700 INFO /business/company/advisors                        	47
+2020-06-17 11:48:50,700 INFO /people/person/profession                         	2
+2020-06-17 11:48:50,700 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 11:48:50,700 INFO /people/person/religion                           	73
+2020-06-17 11:48:50,700 INFO /people/person/ethnicity                          	22
+2020-06-17 11:48:50,700 INFO /business/company/place_founded                   	412
+2020-06-17 11:48:50,700 INFO /location/administrative_division/country         	6496
+2020-06-17 11:48:50,700 INFO /business/company/industry                        	1
+2020-06-17 11:48:50,701 INFO --------------------------
+
+2020-06-17 11:51:17,043 INFO ------load train data------
+2020-06-17 11:51:31,005 INFO ------load train data------
+2020-06-17 11:51:48,316 INFO config batchsize: 160
+2020-06-17 11:51:48,316 INFO config word_dim: 100
+2020-06-17 11:51:48,317 INFO config position_dim: 50
+2020-06-17 11:51:48,317 INFO config type_dim: 50
+2020-06-17 11:51:48,317 INFO config hidden_dim: 500
+2020-06-17 11:51:48,317 INFO config pos_max: 100
+2020-06-17 11:51:48,317 INFO config redistribution: True
+2020-06-17 11:51:48,317 INFO config attention_regularization: True
+2020-06-17 11:51:48,318 INFO config bootstrap: True
+2020-06-17 11:51:48,318 INFO config zero: True
+2020-06-17 11:51:48,318 INFO config lower: False
+2020-06-17 11:51:48,318 INFO config first_loop_epoch: 10
+2020-06-17 11:51:48,318 INFO config epoch: 50
+2020-06-17 11:51:48,318 INFO config init_patterns_ratio: 0.1
+2020-06-17 11:51:48,318 INFO config init_patterns_max: 20
+2020-06-17 11:51:48,319 INFO config pattern_threshold: 0.5
+2020-06-17 11:51:48,319 INFO config pattern_max: 5
+2020-06-17 11:51:48,319 INFO config beta: 1.0
+2020-06-17 11:51:48,319 INFO config lr: 0.001
+2020-06-17 11:51:48,319 INFO config clip: 5.0
+2020-06-17 11:51:48,319 INFO config lr_method: adam
+2020-06-17 11:51:48,319 INFO config restore: False
+2020-06-17 11:51:48,320 INFO config use_small: False
+2020-06-17 11:51:48,320 INFO config dropout: 0.5
+2020-06-17 11:51:48,320 INFO config pretrained_word: True
+2020-06-17 11:51:48,320 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 11:51:48,320 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 11:51:48,320 INFO config word_num: 53684
+2020-06-17 11:51:48,320 INFO config type_num: 13
+2020-06-17 11:51:48,321 INFO config label_num: 11
+2020-06-17 11:51:48,321 INFO config position_num: 100
+2020-06-17 11:54:02,581 INFO ---Data count---
+2020-06-17 11:54:02,581 INFO /location/country/capital                         	8447
+2020-06-17 11:54:02,581 INFO /business/person/company                          	5903
+2020-06-17 11:54:02,582 INFO /people/person/children                           	513
+2020-06-17 11:54:02,582 INFO all                                               	106103
+2020-06-17 11:54:02,582 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 11:54:02,582 INFO /people/person/nationality                        	8768
+2020-06-17 11:54:02,582 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 11:54:02,582 INFO /people/person/place_of_birth                     	3304
+2020-06-17 11:54:02,583 INFO /location/location/contains                       	62891
+2020-06-17 11:54:02,583 INFO /business/company/founders                        	842
+2020-06-17 11:54:02,583 INFO /people/person/place_lived                        	7423
+2020-06-17 11:54:02,583 INFO ---Badcase count---
+2020-06-17 11:54:02,583 INFO ---Ignore count---
+2020-06-17 11:54:02,583 INFO /sports/sports_team/location                      	223
+2020-06-17 11:54:02,583 INFO None                                              	260943
+2020-06-17 11:54:02,584 INFO /people/ethnicity/people                          	22
+2020-06-17 11:54:02,584 INFO /location/administrative_division/country         	6496
+2020-06-17 11:54:02,584 INFO /people/person/ethnicity                          	22
+2020-06-17 11:54:02,584 INFO /business/company/major_shareholders              	297
+2020-06-17 11:54:02,584 INFO /business/company/place_founded                   	412
+2020-06-17 11:54:02,584 INFO /business/company/advisors                        	47
+2020-06-17 11:54:02,584 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 11:54:02,585 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 11:54:02,585 INFO /sports/sports_team_location/teams                	223
+2020-06-17 11:54:02,585 INFO /people/person/profession                         	2
+2020-06-17 11:54:02,585 INFO /business/company/industry                        	1
+2020-06-17 11:54:02,585 INFO /people/person/religion                           	73
+2020-06-17 11:54:02,585 INFO --------------------------
+
+2020-06-17 11:55:22,594 INFO ------load train data------
+2020-06-17 11:55:39,720 INFO config batchsize: 160
+2020-06-17 11:55:39,721 INFO config word_dim: 100
+2020-06-17 11:55:39,721 INFO config position_dim: 50
+2020-06-17 11:55:39,721 INFO config type_dim: 50
+2020-06-17 11:55:39,721 INFO config hidden_dim: 500
+2020-06-17 11:55:39,721 INFO config pos_max: 100
+2020-06-17 11:55:39,721 INFO config redistribution: True
+2020-06-17 11:55:39,721 INFO config attention_regularization: True
+2020-06-17 11:55:39,721 INFO config bootstrap: True
+2020-06-17 11:55:39,722 INFO config zero: True
+2020-06-17 11:55:39,722 INFO config lower: False
+2020-06-17 11:55:39,722 INFO config first_loop_epoch: 10
+2020-06-17 11:55:39,722 INFO config epoch: 50
+2020-06-17 11:55:39,722 INFO config init_patterns_ratio: 0.1
+2020-06-17 11:55:39,722 INFO config init_patterns_max: 20
+2020-06-17 11:55:39,722 INFO config pattern_threshold: 0.5
+2020-06-17 11:55:39,723 INFO config pattern_max: 5
+2020-06-17 11:55:39,723 INFO config beta: 1.0
+2020-06-17 11:55:39,723 INFO config lr: 0.001
+2020-06-17 11:55:39,723 INFO config clip: 5.0
+2020-06-17 11:55:39,723 INFO config lr_method: adam
+2020-06-17 11:55:39,723 INFO config restore: False
+2020-06-17 11:55:39,723 INFO config use_small: False
+2020-06-17 11:55:39,723 INFO config dropout: 0.5
+2020-06-17 11:55:39,724 INFO config pretrained_word: True
+2020-06-17 11:55:39,724 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 11:55:39,724 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 11:55:39,724 INFO config word_num: 53684
+2020-06-17 11:55:39,724 INFO config type_num: 13
+2020-06-17 11:55:39,724 INFO config label_num: 11
+2020-06-17 11:55:39,724 INFO config position_num: 100
+2020-06-17 11:57:52,650 INFO ---Data count---
+2020-06-17 11:57:52,650 INFO /people/person/place_lived                        	7423
+2020-06-17 11:57:52,650 INFO /people/person/children                           	513
+2020-06-17 11:57:52,650 INFO /business/company/founders                        	842
+2020-06-17 11:57:52,650 INFO /location/location/contains                       	62891
+2020-06-17 11:57:52,651 INFO /people/person/place_of_birth                     	3304
+2020-06-17 11:57:52,651 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 11:57:52,651 INFO /people/person/nationality                        	8768
+2020-06-17 11:57:52,651 INFO all                                               	106103
+2020-06-17 11:57:52,651 INFO /business/person/company                          	5903
+2020-06-17 11:57:52,651 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 11:57:52,652 INFO /location/country/capital                         	8447
+2020-06-17 11:57:52,652 INFO ---Badcase count---
+2020-06-17 11:57:52,652 INFO ---Ignore count---
+2020-06-17 11:57:52,652 INFO /people/ethnicity/people                          	22
+2020-06-17 11:57:52,652 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 11:57:52,652 INFO None                                              	260943
+2020-06-17 11:57:52,652 INFO /business/company/place_founded                   	412
+2020-06-17 11:57:52,653 INFO /people/person/profession                         	2
+2020-06-17 11:57:52,653 INFO /people/person/religion                           	73
+2020-06-17 11:57:52,653 INFO /sports/sports_team/location                      	223
+2020-06-17 11:57:52,653 INFO /people/person/ethnicity                          	22
+2020-06-17 11:57:52,653 INFO /location/administrative_division/country         	6496
+2020-06-17 11:57:52,653 INFO /business/company/major_shareholders              	297
+2020-06-17 11:57:52,654 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 11:57:52,654 INFO /sports/sports_team_location/teams                	223
+2020-06-17 11:57:52,654 INFO /business/company/industry                        	1
+2020-06-17 11:57:52,654 INFO /business/company/advisors                        	47
+2020-06-17 11:57:52,654 INFO --------------------------
+
+2020-06-17 11:59:24,885 INFO ------load train data------
+2020-06-17 11:59:41,846 INFO config batchsize: 160
+2020-06-17 11:59:41,846 INFO config word_dim: 100
+2020-06-17 11:59:41,846 INFO config position_dim: 50
+2020-06-17 11:59:41,846 INFO config type_dim: 50
+2020-06-17 11:59:41,847 INFO config hidden_dim: 500
+2020-06-17 11:59:41,847 INFO config pos_max: 100
+2020-06-17 11:59:41,847 INFO config redistribution: True
+2020-06-17 11:59:41,847 INFO config attention_regularization: True
+2020-06-17 11:59:41,847 INFO config bootstrap: True
+2020-06-17 11:59:41,847 INFO config zero: True
+2020-06-17 11:59:41,847 INFO config lower: False
+2020-06-17 11:59:41,848 INFO config first_loop_epoch: 10
+2020-06-17 11:59:41,848 INFO config epoch: 50
+2020-06-17 11:59:41,848 INFO config init_patterns_ratio: 0.1
+2020-06-17 11:59:41,848 INFO config init_patterns_max: 20
+2020-06-17 11:59:41,848 INFO config pattern_threshold: 0.5
+2020-06-17 11:59:41,848 INFO config pattern_max: 5
+2020-06-17 11:59:41,848 INFO config beta: 1.0
+2020-06-17 11:59:41,848 INFO config lr: 0.001
+2020-06-17 11:59:41,849 INFO config clip: 5.0
+2020-06-17 11:59:41,849 INFO config lr_method: adam
+2020-06-17 11:59:41,849 INFO config restore: False
+2020-06-17 11:59:41,849 INFO config use_small: False
+2020-06-17 11:59:41,849 INFO config dropout: 0.5
+2020-06-17 11:59:41,849 INFO config pretrained_word: True
+2020-06-17 11:59:41,849 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 11:59:41,849 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 11:59:41,850 INFO config word_num: 53684
+2020-06-17 11:59:41,850 INFO config type_num: 13
+2020-06-17 11:59:41,850 INFO config label_num: 11
+2020-06-17 11:59:41,850 INFO config position_num: 100
+2020-06-17 12:01:54,530 INFO ---Data count---
+2020-06-17 12:01:54,530 INFO /business/company/founders                        	842
+2020-06-17 12:01:54,530 INFO /location/country/capital                         	8447
+2020-06-17 12:01:54,530 INFO /people/person/nationality                        	8768
+2020-06-17 12:01:54,531 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 12:01:54,531 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 12:01:54,531 INFO /people/person/children                           	513
+2020-06-17 12:01:54,531 INFO /business/person/company                          	5903
+2020-06-17 12:01:54,531 INFO /location/location/contains                       	62891
+2020-06-17 12:01:54,531 INFO /people/person/place_of_birth                     	3304
+2020-06-17 12:01:54,531 INFO /people/person/place_lived                        	7423
+2020-06-17 12:01:54,532 INFO all                                               	106103
+2020-06-17 12:01:54,532 INFO ---Badcase count---
+2020-06-17 12:01:54,532 INFO ---Ignore count---
+2020-06-17 12:01:54,532 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 12:01:54,532 INFO /business/company/place_founded                   	412
+2020-06-17 12:01:54,532 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 12:01:54,532 INFO /location/administrative_division/country         	6496
+2020-06-17 12:01:54,533 INFO /business/company/major_shareholders              	297
+2020-06-17 12:01:54,533 INFO /sports/sports_team/location                      	223
+2020-06-17 12:01:54,533 INFO /business/company/industry                        	1
+2020-06-17 12:01:54,533 INFO /people/ethnicity/people                          	22
+2020-06-17 12:01:54,533 INFO /sports/sports_team_location/teams                	223
+2020-06-17 12:01:54,533 INFO /people/person/profession                         	2
+2020-06-17 12:01:54,533 INFO /people/person/ethnicity                          	22
+2020-06-17 12:01:54,534 INFO /business/company/advisors                        	47
+2020-06-17 12:01:54,534 INFO None                                              	260943
+2020-06-17 12:01:54,534 INFO /people/person/religion                           	73
+2020-06-17 12:01:54,534 INFO --------------------------
+
+2020-06-17 12:02:24,768 INFO ------load train data------
+2020-06-17 12:02:41,734 INFO config batchsize: 160
+2020-06-17 12:02:41,734 INFO config word_dim: 100
+2020-06-17 12:02:41,734 INFO config position_dim: 50
+2020-06-17 12:02:41,734 INFO config type_dim: 50
+2020-06-17 12:02:41,734 INFO config hidden_dim: 500
+2020-06-17 12:02:41,735 INFO config pos_max: 100
+2020-06-17 12:02:41,735 INFO config redistribution: True
+2020-06-17 12:02:41,735 INFO config attention_regularization: True
+2020-06-17 12:02:41,735 INFO config bootstrap: True
+2020-06-17 12:02:41,735 INFO config zero: True
+2020-06-17 12:02:41,735 INFO config lower: False
+2020-06-17 12:02:41,735 INFO config first_loop_epoch: 10
+2020-06-17 12:02:41,736 INFO config epoch: 50
+2020-06-17 12:02:41,736 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:02:41,736 INFO config init_patterns_max: 20
+2020-06-17 12:02:41,736 INFO config pattern_threshold: 0.5
+2020-06-17 12:02:41,736 INFO config pattern_max: 5
+2020-06-17 12:02:41,736 INFO config beta: 1.0
+2020-06-17 12:02:41,736 INFO config lr: 0.001
+2020-06-17 12:02:41,736 INFO config clip: 5.0
+2020-06-17 12:02:41,736 INFO config lr_method: adam
+2020-06-17 12:02:41,737 INFO config restore: False
+2020-06-17 12:02:41,737 INFO config use_small: False
+2020-06-17 12:02:41,737 INFO config dropout: 0.5
+2020-06-17 12:02:41,737 INFO config pretrained_word: True
+2020-06-17 12:02:41,737 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:02:41,737 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:02:41,737 INFO config word_num: 53684
+2020-06-17 12:02:41,737 INFO config type_num: 13
+2020-06-17 12:02:41,738 INFO config label_num: 11
+2020-06-17 12:02:41,738 INFO config position_num: 100
+2020-06-17 12:03:11,809 INFO ------load train data------
+2020-06-17 12:03:28,915 INFO config batchsize: 160
+2020-06-17 12:03:28,915 INFO config word_dim: 100
+2020-06-17 12:03:28,915 INFO config position_dim: 50
+2020-06-17 12:03:28,915 INFO config type_dim: 50
+2020-06-17 12:03:28,915 INFO config hidden_dim: 500
+2020-06-17 12:03:28,915 INFO config pos_max: 100
+2020-06-17 12:03:28,916 INFO config redistribution: True
+2020-06-17 12:03:28,916 INFO config attention_regularization: True
+2020-06-17 12:03:28,916 INFO config bootstrap: True
+2020-06-17 12:03:28,916 INFO config zero: True
+2020-06-17 12:03:28,916 INFO config lower: False
+2020-06-17 12:03:28,916 INFO config first_loop_epoch: 10
+2020-06-17 12:03:28,916 INFO config epoch: 50
+2020-06-17 12:03:28,916 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:03:28,917 INFO config init_patterns_max: 20
+2020-06-17 12:03:28,917 INFO config pattern_threshold: 0.5
+2020-06-17 12:03:28,917 INFO config pattern_max: 5
+2020-06-17 12:03:28,917 INFO config beta: 1.0
+2020-06-17 12:03:28,917 INFO config lr: 0.001
+2020-06-17 12:03:28,917 INFO config clip: 5.0
+2020-06-17 12:03:28,917 INFO config lr_method: adam
+2020-06-17 12:03:28,918 INFO config restore: False
+2020-06-17 12:03:28,918 INFO config use_small: False
+2020-06-17 12:03:28,918 INFO config dropout: 0.5
+2020-06-17 12:03:28,918 INFO config pretrained_word: True
+2020-06-17 12:03:28,918 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:03:28,918 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:03:28,918 INFO config word_num: 53684
+2020-06-17 12:03:28,918 INFO config type_num: 13
+2020-06-17 12:03:28,919 INFO config label_num: 11
+2020-06-17 12:03:28,919 INFO config position_num: 100
+2020-06-17 12:05:41,551 INFO ---Data count---
+2020-06-17 12:05:41,552 INFO /people/person/place_of_birth                     	3304
+2020-06-17 12:05:41,552 INFO /location/country/capital                         	8447
+2020-06-17 12:05:41,552 INFO /people/person/nationality                        	8768
+2020-06-17 12:05:41,552 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 12:05:41,552 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 12:05:41,552 INFO /location/location/contains                       	62891
+2020-06-17 12:05:41,553 INFO /business/person/company                          	5903
+2020-06-17 12:05:41,553 INFO /business/company/founders                        	842
+2020-06-17 12:05:41,553 INFO all                                               	106103
+2020-06-17 12:05:41,553 INFO /people/person/children                           	513
+2020-06-17 12:05:41,553 INFO /people/person/place_lived                        	7423
+2020-06-17 12:05:41,553 INFO ---Badcase count---
+2020-06-17 12:05:41,553 INFO ---Ignore count---
+2020-06-17 12:05:41,554 INFO /sports/sports_team_location/teams                	223
+2020-06-17 12:05:41,554 INFO /business/company/place_founded                   	412
+2020-06-17 12:05:41,554 INFO /people/person/religion                           	73
+2020-06-17 12:05:41,554 INFO None                                              	260943
+2020-06-17 12:05:41,554 INFO /business/company/major_shareholders              	297
+2020-06-17 12:05:41,554 INFO /location/administrative_division/country         	6496
+2020-06-17 12:05:41,554 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 12:05:41,555 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 12:05:41,555 INFO /sports/sports_team/location                      	223
+2020-06-17 12:05:41,555 INFO /business/company/industry                        	1
+2020-06-17 12:05:41,555 INFO /business/company/advisors                        	47
+2020-06-17 12:05:41,555 INFO /people/person/profession                         	2
+2020-06-17 12:05:41,555 INFO /people/ethnicity/people                          	22
+2020-06-17 12:05:41,555 INFO /people/person/ethnicity                          	22
+2020-06-17 12:05:41,555 INFO --------------------------
+
+2020-06-17 12:06:09,171 INFO ------load train data------
+2020-06-17 12:06:26,474 INFO config batchsize: 160
+2020-06-17 12:06:26,474 INFO config word_dim: 100
+2020-06-17 12:06:26,474 INFO config position_dim: 50
+2020-06-17 12:06:26,474 INFO config type_dim: 50
+2020-06-17 12:06:26,475 INFO config hidden_dim: 500
+2020-06-17 12:06:26,475 INFO config pos_max: 100
+2020-06-17 12:06:26,475 INFO config redistribution: True
+2020-06-17 12:06:26,475 INFO config attention_regularization: True
+2020-06-17 12:06:26,475 INFO config bootstrap: True
+2020-06-17 12:06:26,475 INFO config zero: True
+2020-06-17 12:06:26,475 INFO config lower: False
+2020-06-17 12:06:26,475 INFO config first_loop_epoch: 10
+2020-06-17 12:06:26,476 INFO config epoch: 50
+2020-06-17 12:06:26,476 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:06:26,476 INFO config init_patterns_max: 20
+2020-06-17 12:06:26,476 INFO config pattern_threshold: 0.5
+2020-06-17 12:06:26,476 INFO config pattern_max: 5
+2020-06-17 12:06:26,476 INFO config beta: 1.0
+2020-06-17 12:06:26,476 INFO config lr: 0.001
+2020-06-17 12:06:26,477 INFO config clip: 5.0
+2020-06-17 12:06:26,477 INFO config lr_method: adam
+2020-06-17 12:06:26,477 INFO config restore: False
+2020-06-17 12:06:26,477 INFO config use_small: False
+2020-06-17 12:06:26,477 INFO config dropout: 0.5
+2020-06-17 12:06:26,477 INFO config pretrained_word: True
+2020-06-17 12:06:26,477 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:06:26,477 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:06:26,478 INFO config word_num: 53684
+2020-06-17 12:06:26,478 INFO config type_num: 13
+2020-06-17 12:06:26,478 INFO config label_num: 11
+2020-06-17 12:06:26,478 INFO config position_num: 100
+2020-06-17 12:08:39,142 INFO ---Data count---
+2020-06-17 12:08:39,143 INFO /people/person/children                           	513
+2020-06-17 12:08:39,143 INFO /people/person/nationality                        	8768
+2020-06-17 12:08:39,143 INFO all                                               	106103
+2020-06-17 12:08:39,143 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 12:08:39,143 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 12:08:39,143 INFO /business/company/founders                        	842
+2020-06-17 12:08:39,144 INFO /people/person/place_lived                        	7423
+2020-06-17 12:08:39,144 INFO /business/person/company                          	5903
+2020-06-17 12:08:39,144 INFO /people/person/place_of_birth                     	3304
+2020-06-17 12:08:39,144 INFO /location/country/capital                         	8447
+2020-06-17 12:08:39,144 INFO /location/location/contains                       	62891
+2020-06-17 12:08:39,144 INFO ---Badcase count---
+2020-06-17 12:08:39,144 INFO ---Ignore count---
+2020-06-17 12:08:39,145 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 12:08:39,145 INFO /business/company/industry                        	1
+2020-06-17 12:08:39,145 INFO None                                              	260943
+2020-06-17 12:08:39,145 INFO /sports/sports_team_location/teams                	223
+2020-06-17 12:08:39,145 INFO /business/company/major_shareholders              	297
+2020-06-17 12:08:39,145 INFO /sports/sports_team/location                      	223
+2020-06-17 12:08:39,146 INFO /people/person/profession                         	2
+2020-06-17 12:08:39,146 INFO /business/company/place_founded                   	412
+2020-06-17 12:08:39,146 INFO /people/person/ethnicity                          	22
+2020-06-17 12:08:39,146 INFO /location/administrative_division/country         	6496
+2020-06-17 12:08:39,146 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 12:08:39,146 INFO /people/person/religion                           	73
+2020-06-17 12:08:39,147 INFO /people/ethnicity/people                          	22
+2020-06-17 12:08:39,147 INFO /business/company/advisors                        	47
+2020-06-17 12:08:39,147 INFO --------------------------
+
+2020-06-17 12:33:00,641 INFO ------load train data------
+2020-06-17 12:33:15,391 INFO ------load train data------
+2020-06-17 12:33:32,683 INFO config batchsize: 160
+2020-06-17 12:33:32,683 INFO config word_dim: 100
+2020-06-17 12:33:32,683 INFO config position_dim: 50
+2020-06-17 12:33:32,684 INFO config type_dim: 50
+2020-06-17 12:33:32,684 INFO config hidden_dim: 500
+2020-06-17 12:33:32,684 INFO config pos_max: 100
+2020-06-17 12:33:32,684 INFO config redistribution: True
+2020-06-17 12:33:32,684 INFO config attention_regularization: True
+2020-06-17 12:33:32,684 INFO config bootstrap: True
+2020-06-17 12:33:32,684 INFO config zero: True
+2020-06-17 12:33:32,684 INFO config lower: False
+2020-06-17 12:33:32,685 INFO config first_loop_epoch: 10
+2020-06-17 12:33:32,685 INFO config epoch: 50
+2020-06-17 12:33:32,685 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:33:32,685 INFO config init_patterns_max: 20
+2020-06-17 12:33:32,685 INFO config pattern_threshold: 0.5
+2020-06-17 12:33:32,685 INFO config pattern_max: 5
+2020-06-17 12:33:32,685 INFO config beta: 1.0
+2020-06-17 12:33:32,685 INFO config lr: 0.001
+2020-06-17 12:33:32,686 INFO config clip: 5.0
+2020-06-17 12:33:32,686 INFO config lr_method: adam
+2020-06-17 12:33:32,686 INFO config restore: False
+2020-06-17 12:33:32,686 INFO config use_small: False
+2020-06-17 12:33:32,686 INFO config dropout: 0.5
+2020-06-17 12:33:32,686 INFO config pretrained_word: True
+2020-06-17 12:33:32,686 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:33:32,780 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:33:32,781 INFO config word_num: 53684
+2020-06-17 12:33:32,781 INFO config type_num: 13
+2020-06-17 12:33:32,782 INFO config label_num: 11
+2020-06-17 12:33:32,782 INFO config position_num: 100
+2020-06-17 12:35:45,047 INFO ---Data count---
+2020-06-17 12:35:45,047 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 12:35:45,048 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 12:35:45,048 INFO all                                               	106103
+2020-06-17 12:35:45,048 INFO /location/country/capital                         	8447
+2020-06-17 12:35:45,048 INFO /business/company/founders                        	842
+2020-06-17 12:35:45,048 INFO /people/person/place_lived                        	7423
+2020-06-17 12:35:45,048 INFO /people/person/children                           	513
+2020-06-17 12:35:45,049 INFO /business/person/company                          	5903
+2020-06-17 12:35:45,049 INFO /location/location/contains                       	62891
+2020-06-17 12:35:45,049 INFO /people/person/nationality                        	8768
+2020-06-17 12:35:45,049 INFO /people/person/place_of_birth                     	3304
+2020-06-17 12:35:45,049 INFO ---Badcase count---
+2020-06-17 12:35:45,049 INFO ---Ignore count---
+2020-06-17 12:35:45,049 INFO /people/person/profession                         	2
+2020-06-17 12:35:45,050 INFO /sports/sports_team_location/teams                	223
+2020-06-17 12:35:45,050 INFO /people/person/religion                           	73
+2020-06-17 12:35:45,050 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 12:35:45,050 INFO None                                              	260943
+2020-06-17 12:35:45,050 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 12:35:45,050 INFO /business/company/place_founded                   	412
+2020-06-17 12:35:45,051 INFO /business/company/advisors                        	47
+2020-06-17 12:35:45,051 INFO /sports/sports_team/location                      	223
+2020-06-17 12:35:45,051 INFO /location/administrative_division/country         	6496
+2020-06-17 12:35:45,051 INFO /business/company/industry                        	1
+2020-06-17 12:35:45,051 INFO /people/ethnicity/people                          	22
+2020-06-17 12:35:45,051 INFO /business/company/major_shareholders              	297
+2020-06-17 12:35:45,052 INFO /people/person/ethnicity                          	22
+2020-06-17 12:35:45,052 INFO --------------------------
+
+2020-06-17 12:37:24,447 INFO ------load train data------
+2020-06-17 12:37:41,364 INFO config batchsize: 160
+2020-06-17 12:37:41,365 INFO config word_dim: 100
+2020-06-17 12:37:41,365 INFO config position_dim: 50
+2020-06-17 12:37:41,365 INFO config type_dim: 50
+2020-06-17 12:37:41,365 INFO config hidden_dim: 500
+2020-06-17 12:37:41,365 INFO config pos_max: 100
+2020-06-17 12:37:41,365 INFO config redistribution: True
+2020-06-17 12:37:41,365 INFO config attention_regularization: True
+2020-06-17 12:37:41,366 INFO config bootstrap: True
+2020-06-17 12:37:41,366 INFO config zero: True
+2020-06-17 12:37:41,366 INFO config lower: False
+2020-06-17 12:37:41,366 INFO config first_loop_epoch: 10
+2020-06-17 12:37:41,366 INFO config epoch: 50
+2020-06-17 12:37:41,366 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:37:41,366 INFO config init_patterns_max: 20
+2020-06-17 12:37:41,366 INFO config pattern_threshold: 0.5
+2020-06-17 12:37:41,367 INFO config pattern_max: 5
+2020-06-17 12:37:41,367 INFO config beta: 1.0
+2020-06-17 12:37:41,367 INFO config lr: 0.001
+2020-06-17 12:37:41,367 INFO config clip: 5.0
+2020-06-17 12:37:41,465 INFO config lr_method: adam
+2020-06-17 12:37:41,466 INFO config restore: False
+2020-06-17 12:37:41,467 INFO config use_small: False
+2020-06-17 12:37:41,467 INFO config dropout: 0.5
+2020-06-17 12:37:41,468 INFO config pretrained_word: True
+2020-06-17 12:37:41,469 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:37:41,469 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:37:41,470 INFO config word_num: 53684
+2020-06-17 12:37:41,470 INFO config type_num: 13
+2020-06-17 12:37:41,471 INFO config label_num: 11
+2020-06-17 12:37:41,471 INFO config position_num: 100
+2020-06-17 12:39:54,211 INFO ---Data count---
+2020-06-17 12:39:54,211 INFO /people/person/nationality                        	8768
+2020-06-17 12:39:54,211 INFO /location/location/contains                       	62891
+2020-06-17 12:39:54,212 INFO /people/person/place_lived                        	7423
+2020-06-17 12:39:54,212 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 12:39:54,212 INFO /people/person/children                           	513
+2020-06-17 12:39:54,212 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 12:39:54,212 INFO all                                               	106103
+2020-06-17 12:39:54,212 INFO /business/person/company                          	5903
+2020-06-17 12:39:54,213 INFO /location/country/capital                         	8447
+2020-06-17 12:39:54,213 INFO /business/company/founders                        	842
+2020-06-17 12:39:54,213 INFO /people/person/place_of_birth                     	3304
+2020-06-17 12:39:54,213 INFO ---Badcase count---
+2020-06-17 12:39:54,213 INFO ---Ignore count---
+2020-06-17 12:39:54,213 INFO /business/company/major_shareholders              	297
+2020-06-17 12:39:54,214 INFO /sports/sports_team/location                      	223
+2020-06-17 12:39:54,214 INFO /business/company/place_founded                   	412
+2020-06-17 12:39:54,214 INFO /sports/sports_team_location/teams                	223
+2020-06-17 12:39:54,214 INFO /people/ethnicity/people                          	22
+2020-06-17 12:39:54,214 INFO /location/administrative_division/country         	6496
+2020-06-17 12:39:54,214 INFO /people/person/profession                         	2
+2020-06-17 12:39:54,214 INFO /business/company/industry                        	1
+2020-06-17 12:39:54,215 INFO /people/person/religion                           	73
+2020-06-17 12:39:54,215 INFO None                                              	260943
+2020-06-17 12:39:54,215 INFO /business/company/advisors                        	47
+2020-06-17 12:39:54,215 INFO /people/person/ethnicity                          	22
+2020-06-17 12:39:54,215 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 12:39:54,215 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 12:39:54,215 INFO --------------------------
+
+2020-06-17 12:41:24,629 INFO ------load train data------
+2020-06-17 12:41:32,863 INFO config batchsize: 160
+2020-06-17 12:41:32,863 INFO config word_dim: 100
+2020-06-17 12:41:32,863 INFO config position_dim: 50
+2020-06-17 12:41:32,863 INFO config type_dim: 50
+2020-06-17 12:41:32,864 INFO config hidden_dim: 500
+2020-06-17 12:41:32,864 INFO config pos_max: 100
+2020-06-17 12:41:32,864 INFO config redistribution: True
+2020-06-17 12:41:32,864 INFO config attention_regularization: True
+2020-06-17 12:41:32,864 INFO config bootstrap: True
+2020-06-17 12:41:32,864 INFO config zero: True
+2020-06-17 12:41:32,864 INFO config lower: False
+2020-06-17 12:41:32,864 INFO config first_loop_epoch: 10
+2020-06-17 12:41:32,864 INFO config epoch: 50
+2020-06-17 12:41:32,864 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:41:32,864 INFO config init_patterns_max: 20
+2020-06-17 12:41:32,864 INFO config pattern_threshold: 0.5
+2020-06-17 12:41:32,864 INFO config pattern_max: 5
+2020-06-17 12:41:32,864 INFO config beta: 1.0
+2020-06-17 12:41:32,864 INFO config lr: 0.001
+2020-06-17 12:41:32,864 INFO config clip: 5.0
+2020-06-17 12:41:32,864 INFO config lr_method: adam
+2020-06-17 12:41:32,864 INFO config restore: False
+2020-06-17 12:41:32,864 INFO config use_small: False
+2020-06-17 12:41:32,864 INFO config dropout: 0.5
+2020-06-17 12:41:32,864 INFO config pretrained_word: True
+2020-06-17 12:41:32,865 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:41:32,865 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:41:32,865 INFO config word_num: 53684
+2020-06-17 12:41:32,865 INFO config type_num: 13
+2020-06-17 12:41:32,865 INFO config label_num: 11
+2020-06-17 12:41:32,865 INFO config position_num: 100
+2020-06-17 12:42:10,669 INFO ---Data count---
+2020-06-17 12:42:10,669 INFO /people/person/nationality                        	8768
+2020-06-17 12:42:10,670 INFO /business/company/founders                        	842
+2020-06-17 12:42:10,670 INFO /location/country/capital                         	8447
+2020-06-17 12:42:10,670 INFO /people/person/place_lived                        	7423
+2020-06-17 12:42:10,670 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 12:42:10,670 INFO /location/location/contains                       	62891
+2020-06-17 12:42:10,670 INFO /people/person/children                           	513
+2020-06-17 12:42:10,670 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 12:42:10,670 INFO /people/person/place_of_birth                     	3304
+2020-06-17 12:42:10,670 INFO all                                               	106103
+2020-06-17 12:42:10,670 INFO /business/person/company                          	5903
+2020-06-17 12:42:10,670 INFO ---Badcase count---
+2020-06-17 12:42:10,670 INFO ---Ignore count---
+2020-06-17 12:42:10,670 INFO /people/ethnicity/people                          	22
+2020-06-17 12:42:10,670 INFO /business/company/industry                        	1
+2020-06-17 12:42:10,670 INFO /business/company/major_shareholders              	297
+2020-06-17 12:42:10,670 INFO /people/person/profession                         	2
+2020-06-17 12:42:10,670 INFO /business/company/advisors                        	47
+2020-06-17 12:42:10,670 INFO /people/person/ethnicity                          	22
+2020-06-17 12:42:10,670 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 12:42:10,671 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 12:42:10,671 INFO None                                              	260943
+2020-06-17 12:42:10,671 INFO /location/administrative_division/country         	6496
+2020-06-17 12:42:10,671 INFO /people/person/religion                           	73
+2020-06-17 12:42:10,671 INFO /business/company/place_founded                   	412
+2020-06-17 12:42:10,671 INFO /sports/sports_team_location/teams                	223
+2020-06-17 12:42:10,671 INFO /sports/sports_team/location                      	223
+2020-06-17 12:42:10,671 INFO --------------------------
+
+2020-06-17 12:42:50,139 INFO ------load train data------
+2020-06-17 12:43:07,188 INFO config batchsize: 160
+2020-06-17 12:43:07,188 INFO config word_dim: 100
+2020-06-17 12:43:07,188 INFO config position_dim: 50
+2020-06-17 12:43:07,188 INFO config type_dim: 50
+2020-06-17 12:43:07,189 INFO config hidden_dim: 500
+2020-06-17 12:43:07,189 INFO config pos_max: 100
+2020-06-17 12:43:07,189 INFO config redistribution: True
+2020-06-17 12:43:07,189 INFO config attention_regularization: True
+2020-06-17 12:43:07,189 INFO config bootstrap: True
+2020-06-17 12:43:07,189 INFO config zero: True
+2020-06-17 12:43:07,189 INFO config lower: False
+2020-06-17 12:43:07,189 INFO config first_loop_epoch: 10
+2020-06-17 12:43:07,190 INFO config epoch: 50
+2020-06-17 12:43:07,190 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:43:07,190 INFO config init_patterns_max: 20
+2020-06-17 12:43:07,190 INFO config pattern_threshold: 0.5
+2020-06-17 12:43:07,190 INFO config pattern_max: 5
+2020-06-17 12:43:07,190 INFO config beta: 1.0
+2020-06-17 12:43:07,190 INFO config lr: 0.001
+2020-06-17 12:43:07,190 INFO config clip: 5.0
+2020-06-17 12:43:07,191 INFO config lr_method: adam
+2020-06-17 12:43:07,191 INFO config restore: False
+2020-06-17 12:43:07,191 INFO config use_small: False
+2020-06-17 12:43:07,191 INFO config dropout: 0.5
+2020-06-17 12:43:07,191 INFO config pretrained_word: True
+2020-06-17 12:43:07,191 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:43:07,191 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:43:07,191 INFO config word_num: 53684
+2020-06-17 12:43:07,192 INFO config type_num: 13
+2020-06-17 12:43:07,192 INFO config label_num: 11
+2020-06-17 12:43:07,192 INFO config position_num: 100
+2020-06-17 12:45:20,705 INFO ---Data count---
+2020-06-17 12:45:20,705 INFO /people/person/place_of_birth                     	3304
+2020-06-17 12:45:20,705 INFO /location/location/contains                       	62891
+2020-06-17 12:45:20,705 INFO all                                               	106103
+2020-06-17 12:45:20,705 INFO /business/company/founders                        	842
+2020-06-17 12:45:20,706 INFO /people/person/children                           	513
+2020-06-17 12:45:20,706 INFO /people/person/nationality                        	8768
+2020-06-17 12:45:20,706 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 12:45:20,706 INFO /people/person/place_lived                        	7423
+2020-06-17 12:45:20,706 INFO /location/country/capital                         	8447
+2020-06-17 12:45:20,706 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 12:45:20,707 INFO /business/person/company                          	5903
+2020-06-17 12:45:20,707 INFO ---Badcase count---
+2020-06-17 12:45:20,707 INFO ---Ignore count---
+2020-06-17 12:45:20,707 INFO /business/company/major_shareholders              	297
+2020-06-17 12:45:20,707 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 12:45:20,707 INFO /location/administrative_division/country         	6496
+2020-06-17 12:45:20,707 INFO /business/company/advisors                        	47
+2020-06-17 12:45:20,707 INFO /people/ethnicity/people                          	22
+2020-06-17 12:45:20,708 INFO /sports/sports_team_location/teams                	223
+2020-06-17 12:45:20,708 INFO /people/person/ethnicity                          	22
+2020-06-17 12:45:20,708 INFO None                                              	260943
+2020-06-17 12:45:20,708 INFO /business/company/industry                        	1
+2020-06-17 12:45:20,708 INFO /sports/sports_team/location                      	223
+2020-06-17 12:45:20,708 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 12:45:20,708 INFO /people/person/religion                           	73
+2020-06-17 12:45:20,709 INFO /business/company/place_founded                   	412
+2020-06-17 12:45:20,709 INFO /people/person/profession                         	2
+2020-06-17 12:45:20,709 INFO --------------------------
+
+2020-06-17 12:49:57,062 INFO ------load train data------
+2020-06-17 12:50:05,586 INFO config batchsize: 160
+2020-06-17 12:50:05,587 INFO config word_dim: 100
+2020-06-17 12:50:05,587 INFO config position_dim: 50
+2020-06-17 12:50:05,587 INFO config type_dim: 50
+2020-06-17 12:50:05,587 INFO config hidden_dim: 500
+2020-06-17 12:50:05,587 INFO config pos_max: 100
+2020-06-17 12:50:05,587 INFO config redistribution: True
+2020-06-17 12:50:05,587 INFO config attention_regularization: True
+2020-06-17 12:50:05,587 INFO config bootstrap: True
+2020-06-17 12:50:05,587 INFO config zero: True
+2020-06-17 12:50:05,587 INFO config lower: False
+2020-06-17 12:50:05,587 INFO config first_loop_epoch: 10
+2020-06-17 12:50:05,587 INFO config epoch: 50
+2020-06-17 12:50:05,587 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:50:05,587 INFO config init_patterns_max: 20
+2020-06-17 12:50:05,587 INFO config pattern_threshold: 0.5
+2020-06-17 12:50:05,587 INFO config pattern_max: 5
+2020-06-17 12:50:05,587 INFO config beta: 1.0
+2020-06-17 12:50:05,588 INFO config lr: 0.001
+2020-06-17 12:50:05,588 INFO config clip: 5.0
+2020-06-17 12:50:05,588 INFO config lr_method: adam
+2020-06-17 12:50:05,588 INFO config restore: False
+2020-06-17 12:50:05,588 INFO config use_small: False
+2020-06-17 12:50:05,588 INFO config dropout: 0.5
+2020-06-17 12:50:05,588 INFO config pretrained_word: True
+2020-06-17 12:50:05,588 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:50:05,588 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:50:05,588 INFO config word_num: 53684
+2020-06-17 12:50:05,588 INFO config type_num: 13
+2020-06-17 12:50:05,588 INFO config label_num: 11
+2020-06-17 12:50:05,588 INFO config position_num: 100
+2020-06-17 12:50:46,366 INFO ---Data count---
+2020-06-17 12:50:46,366 INFO /business/person/company                          	5903
+2020-06-17 12:50:46,366 INFO /location/country/capital                         	8447
+2020-06-17 12:50:46,366 INFO /business/company/founders                        	842
+2020-06-17 12:50:46,366 INFO /people/person/nationality                        	8768
+2020-06-17 12:50:46,366 INFO /people/person/place_of_birth                     	3304
+2020-06-17 12:50:46,366 INFO /people/person/place_lived                        	7423
+2020-06-17 12:50:46,367 INFO all                                               	106103
+2020-06-17 12:50:46,367 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 12:50:46,367 INFO /people/person/children                           	513
+2020-06-17 12:50:46,367 INFO /location/location/contains                       	62891
+2020-06-17 12:50:46,367 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 12:50:46,367 INFO ---Badcase count---
+2020-06-17 12:50:46,367 INFO ---Ignore count---
+2020-06-17 12:50:46,367 INFO /people/ethnicity/people                          	22
+2020-06-17 12:50:46,367 INFO /sports/sports_team_location/teams                	223
+2020-06-17 12:50:46,367 INFO /people/person/ethnicity                          	22
+2020-06-17 12:50:46,367 INFO /business/company/industry                        	1
+2020-06-17 12:50:46,367 INFO /business/company/place_founded                   	412
+2020-06-17 12:50:46,367 INFO None                                              	260943
+2020-06-17 12:50:46,367 INFO /location/administrative_division/country         	6496
+2020-06-17 12:50:46,367 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 12:50:46,367 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 12:50:46,367 INFO /business/company/advisors                        	47
+2020-06-17 12:50:46,367 INFO /people/person/religion                           	73
+2020-06-17 12:50:46,367 INFO /sports/sports_team/location                      	223
+2020-06-17 12:50:46,368 INFO /people/person/profession                         	2
+2020-06-17 12:50:46,368 INFO /business/company/major_shareholders              	297
+2020-06-17 12:50:46,368 INFO --------------------------
+
+2020-06-17 12:52:02,577 INFO ------load train data------
+2020-06-17 12:52:11,028 INFO config batchsize: 160
+2020-06-17 12:52:11,028 INFO config word_dim: 100
+2020-06-17 12:52:11,028 INFO config position_dim: 50
+2020-06-17 12:52:11,028 INFO config type_dim: 50
+2020-06-17 12:52:11,028 INFO config hidden_dim: 500
+2020-06-17 12:52:11,028 INFO config pos_max: 100
+2020-06-17 12:52:11,028 INFO config redistribution: True
+2020-06-17 12:52:11,028 INFO config attention_regularization: True
+2020-06-17 12:52:11,028 INFO config bootstrap: True
+2020-06-17 12:52:11,028 INFO config zero: True
+2020-06-17 12:52:11,028 INFO config lower: False
+2020-06-17 12:52:11,028 INFO config first_loop_epoch: 10
+2020-06-17 12:52:11,028 INFO config epoch: 50
+2020-06-17 12:52:11,028 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:52:11,028 INFO config init_patterns_max: 20
+2020-06-17 12:52:11,029 INFO config pattern_threshold: 0.5
+2020-06-17 12:52:11,029 INFO config pattern_max: 5
+2020-06-17 12:52:11,029 INFO config beta: 1.0
+2020-06-17 12:52:11,029 INFO config lr: 0.001
+2020-06-17 12:52:11,029 INFO config clip: 5.0
+2020-06-17 12:52:11,029 INFO config lr_method: adam
+2020-06-17 12:52:11,029 INFO config restore: False
+2020-06-17 12:52:11,029 INFO config use_small: False
+2020-06-17 12:52:11,029 INFO config dropout: 0.5
+2020-06-17 12:52:11,029 INFO config pretrained_word: True
+2020-06-17 12:52:11,029 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:52:11,029 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:52:11,029 INFO config word_num: 53684
+2020-06-17 12:52:11,029 INFO config type_num: 13
+2020-06-17 12:52:11,029 INFO config label_num: 11
+2020-06-17 12:52:11,029 INFO config position_num: 100
+2020-06-17 12:54:14,109 INFO ------load train data------
+2020-06-17 12:54:22,541 INFO config batchsize: 160
+2020-06-17 12:54:22,542 INFO config word_dim: 100
+2020-06-17 12:54:22,542 INFO config position_dim: 50
+2020-06-17 12:54:22,542 INFO config type_dim: 50
+2020-06-17 12:54:22,542 INFO config hidden_dim: 500
+2020-06-17 12:54:22,542 INFO config pos_max: 100
+2020-06-17 12:54:22,542 INFO config redistribution: True
+2020-06-17 12:54:22,542 INFO config attention_regularization: True
+2020-06-17 12:54:22,542 INFO config bootstrap: True
+2020-06-17 12:54:22,542 INFO config zero: True
+2020-06-17 12:54:22,542 INFO config lower: False
+2020-06-17 12:54:22,542 INFO config first_loop_epoch: 10
+2020-06-17 12:54:22,542 INFO config epoch: 50
+2020-06-17 12:54:22,542 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:54:22,542 INFO config init_patterns_max: 20
+2020-06-17 12:54:22,542 INFO config pattern_threshold: 0.5
+2020-06-17 12:54:22,542 INFO config pattern_max: 5
+2020-06-17 12:54:22,542 INFO config beta: 1.0
+2020-06-17 12:54:22,542 INFO config lr: 0.001
+2020-06-17 12:54:22,543 INFO config clip: 5.0
+2020-06-17 12:54:22,543 INFO config lr_method: adam
+2020-06-17 12:54:22,543 INFO config restore: False
+2020-06-17 12:54:22,543 INFO config use_small: False
+2020-06-17 12:54:22,543 INFO config dropout: 0.5
+2020-06-17 12:54:22,543 INFO config pretrained_word: True
+2020-06-17 12:54:22,543 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:54:22,543 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:54:22,543 INFO config word_num: 53684
+2020-06-17 12:54:22,543 INFO config type_num: 13
+2020-06-17 12:54:22,543 INFO config label_num: 11
+2020-06-17 12:54:22,543 INFO config position_num: 100
+2020-06-17 12:55:00,640 INFO ---Data count---
+2020-06-17 12:55:00,640 INFO all                                               	106103
+2020-06-17 12:55:00,640 INFO /people/person/children                           	513
+2020-06-17 12:55:00,640 INFO /people/person/place_of_birth                     	3304
+2020-06-17 12:55:00,640 INFO /people/person/nationality                        	8768
+2020-06-17 12:55:00,640 INFO /business/person/company                          	5903
+2020-06-17 12:55:00,640 INFO /location/country/capital                         	8447
+2020-06-17 12:55:00,640 INFO /location/location/contains                       	62891
+2020-06-17 12:55:00,640 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 12:55:00,640 INFO /business/company/founders                        	842
+2020-06-17 12:55:00,640 INFO /people/person/place_lived                        	7423
+2020-06-17 12:55:00,640 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 12:55:00,640 INFO ---Badcase count---
+2020-06-17 12:55:00,640 INFO ---Ignore count---
+2020-06-17 12:55:00,640 INFO /sports/sports_team_location/teams                	223
+2020-06-17 12:55:00,640 INFO /people/ethnicity/people                          	22
+2020-06-17 12:55:00,642 INFO None                                              	260943
+2020-06-17 12:55:00,642 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 12:55:00,642 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 12:55:00,642 INFO /people/person/ethnicity                          	22
+2020-06-17 12:55:00,642 INFO /people/person/profession                         	2
+2020-06-17 12:55:00,642 INFO /business/company/advisors                        	47
+2020-06-17 12:55:00,642 INFO /sports/sports_team/location                      	223
+2020-06-17 12:55:00,642 INFO /people/person/religion                           	73
+2020-06-17 12:55:00,642 INFO /business/company/major_shareholders              	297
+2020-06-17 12:55:00,642 INFO /business/company/place_founded                   	412
+2020-06-17 12:55:00,642 INFO /location/administrative_division/country         	6496
+2020-06-17 12:55:00,642 INFO /business/company/industry                        	1
+2020-06-17 12:55:00,642 INFO --------------------------
+
+2020-06-17 12:55:47,582 INFO ------load train data------
+2020-06-17 12:55:56,054 INFO config batchsize: 160
+2020-06-17 12:55:56,054 INFO config word_dim: 100
+2020-06-17 12:55:56,054 INFO config position_dim: 50
+2020-06-17 12:55:56,054 INFO config type_dim: 50
+2020-06-17 12:55:56,054 INFO config hidden_dim: 500
+2020-06-17 12:55:56,054 INFO config pos_max: 100
+2020-06-17 12:55:56,054 INFO config redistribution: True
+2020-06-17 12:55:56,054 INFO config attention_regularization: True
+2020-06-17 12:55:56,054 INFO config bootstrap: True
+2020-06-17 12:55:56,055 INFO config zero: True
+2020-06-17 12:55:56,055 INFO config lower: False
+2020-06-17 12:55:56,055 INFO config first_loop_epoch: 10
+2020-06-17 12:55:56,055 INFO config epoch: 50
+2020-06-17 12:55:56,055 INFO config init_patterns_ratio: 0.1
+2020-06-17 12:55:56,055 INFO config init_patterns_max: 20
+2020-06-17 12:55:56,055 INFO config pattern_threshold: 0.5
+2020-06-17 12:55:56,055 INFO config pattern_max: 5
+2020-06-17 12:55:56,055 INFO config beta: 1.0
+2020-06-17 12:55:56,055 INFO config lr: 0.001
+2020-06-17 12:55:56,055 INFO config clip: 5.0
+2020-06-17 12:55:56,055 INFO config lr_method: adam
+2020-06-17 12:55:56,055 INFO config restore: False
+2020-06-17 12:55:56,055 INFO config use_small: False
+2020-06-17 12:55:56,055 INFO config dropout: 0.5
+2020-06-17 12:55:56,055 INFO config pretrained_word: True
+2020-06-17 12:55:56,055 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-17 12:55:56,055 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-17 12:55:56,055 INFO config word_num: 53684
+2020-06-17 12:55:56,055 INFO config type_num: 13
+2020-06-17 12:55:56,055 INFO config label_num: 11
+2020-06-17 12:55:56,056 INFO config position_num: 100
+2020-06-17 12:56:34,859 INFO ---Data count---
+2020-06-17 12:56:34,859 INFO /people/person/place_lived                        	7423
+2020-06-17 12:56:34,859 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-17 12:56:34,859 INFO /people/person/place_of_birth                     	3304
+2020-06-17 12:56:34,860 INFO /business/company/founders                        	842
+2020-06-17 12:56:34,860 INFO /location/location/contains                       	62891
+2020-06-17 12:56:34,860 INFO /business/person/company                          	5903
+2020-06-17 12:56:34,860 INFO all                                               	106103
+2020-06-17 12:56:34,860 INFO /people/person/nationality                        	8768
+2020-06-17 12:56:34,860 INFO /location/country/capital                         	8447
+2020-06-17 12:56:34,860 INFO /people/deceased_person/place_of_death            	2008
+2020-06-17 12:56:34,860 INFO /people/person/children                           	513
+2020-06-17 12:56:34,860 INFO ---Badcase count---
+2020-06-17 12:56:34,860 INFO ---Ignore count---
+2020-06-17 12:56:34,860 INFO None                                              	260943
+2020-06-17 12:56:34,860 INFO /business/company/advisors                        	47
+2020-06-17 12:56:34,860 INFO /sports/sports_team_location/teams                	223
+2020-06-17 12:56:34,860 INFO /people/person/profession                         	2
+2020-06-17 12:56:34,860 INFO /people/person/religion                           	73
+2020-06-17 12:56:34,860 INFO /sports/sports_team/location                      	223
+2020-06-17 12:56:34,860 INFO /people/ethnicity/people                          	22
+2020-06-17 12:56:34,860 INFO /people/person/ethnicity                          	22
+2020-06-17 12:56:34,860 INFO /location/administrative_division/country         	6496
+2020-06-17 12:56:34,861 INFO /business/company/industry                        	1
+2020-06-17 12:56:34,861 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-17 12:56:34,861 INFO /business/company/place_founded                   	412
+2020-06-17 12:56:34,861 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-17 12:56:34,861 INFO /business/company/major_shareholders              	297
+2020-06-17 12:56:34,861 INFO --------------------------
+
+2020-06-18 09:12:12,212 INFO ------load train data------
+2020-06-18 09:12:21,829 INFO config batchsize: 160
+2020-06-18 09:12:21,829 INFO config word_dim: 100
+2020-06-18 09:12:21,829 INFO config position_dim: 50
+2020-06-18 09:12:21,829 INFO config type_dim: 50
+2020-06-18 09:12:21,829 INFO config hidden_dim: 500
+2020-06-18 09:12:21,829 INFO config pos_max: 100
+2020-06-18 09:12:21,829 INFO config redistribution: True
+2020-06-18 09:12:21,829 INFO config attention_regularization: True
+2020-06-18 09:12:21,830 INFO config bootstrap: True
+2020-06-18 09:12:21,830 INFO config zero: True
+2020-06-18 09:12:21,830 INFO config lower: False
+2020-06-18 09:12:21,830 INFO config first_loop_epoch: 10
+2020-06-18 09:12:21,830 INFO config epoch: 50
+2020-06-18 09:12:21,830 INFO config init_patterns_ratio: 0.1
+2020-06-18 09:12:21,830 INFO config init_patterns_max: 20
+2020-06-18 09:12:21,830 INFO config pattern_threshold: 0.5
+2020-06-18 09:12:21,830 INFO config pattern_max: 5
+2020-06-18 09:12:21,830 INFO config beta: 1.0
+2020-06-18 09:12:21,830 INFO config lr: 0.001
+2020-06-18 09:12:21,830 INFO config clip: 5.0
+2020-06-18 09:12:21,830 INFO config lr_method: adam
+2020-06-18 09:12:21,830 INFO config restore: False
+2020-06-18 09:12:21,830 INFO config use_small: False
+2020-06-18 09:12:21,830 INFO config dropout: 0.5
+2020-06-18 09:12:21,830 INFO config pretrained_word: True
+2020-06-18 09:12:21,830 INFO config sel_label: ['/people/person/children', '/business/company/founders', '/people/deceased_person/place_of_death', '/people/person/place_of_birth', '/location/neighborhood/neighborhood_of', '/business/person/company', '/people/person/place_lived', '/location/country/capital', '/people/person/nationality', '/location/location/contains']
+2020-06-18 09:12:21,830 INFO config label_map: {'/location/country/administrative_divisions': '/location/location/contains'}
+2020-06-18 09:12:21,830 INFO config word_num: 53684
+2020-06-18 09:12:21,831 INFO config type_num: 13
+2020-06-18 09:12:21,831 INFO config label_num: 11
+2020-06-18 09:12:21,831 INFO config position_num: 100
+2020-06-18 09:12:59,709 INFO ---Data count---
+2020-06-18 09:12:59,709 INFO /people/person/place_of_birth                     	3304
+2020-06-18 09:12:59,709 INFO /business/person/company                          	5903
+2020-06-18 09:12:59,709 INFO /people/person/children                           	513
+2020-06-18 09:12:59,709 INFO /location/neighborhood/neighborhood_of            	6004
+2020-06-18 09:12:59,709 INFO /location/location/contains                       	62891
+2020-06-18 09:12:59,709 INFO /people/deceased_person/place_of_death            	2008
+2020-06-18 09:12:59,709 INFO /location/country/capital                         	8447
+2020-06-18 09:12:59,710 INFO /people/person/place_lived                        	7423
+2020-06-18 09:12:59,710 INFO /business/company/founders                        	842
+2020-06-18 09:12:59,710 INFO all                                               	106103
+2020-06-18 09:12:59,710 INFO /people/person/nationality                        	8768
+2020-06-18 09:12:59,710 INFO ---Badcase count---
+2020-06-18 09:12:59,710 INFO ---Ignore count---
+2020-06-18 09:12:59,710 INFO /business/company_shareholder/major_shareholder_of	297
+2020-06-18 09:12:59,710 INFO /business/company/industry                        	1
+2020-06-18 09:12:59,710 INFO /sports/sports_team/location                      	223
+2020-06-18 09:12:59,710 INFO /people/person/ethnicity                          	22
+2020-06-18 09:12:59,710 INFO None                                              	260943
+2020-06-18 09:12:59,710 INFO /business/company/major_shareholders              	297
+2020-06-18 09:12:59,710 INFO /people/person/religion                           	73
+2020-06-18 09:12:59,710 INFO /people/person/profession                         	2
+2020-06-18 09:12:59,710 INFO /location/administrative_division/country         	6496
+2020-06-18 09:12:59,710 INFO /business/company/place_founded                   	412
+2020-06-18 09:12:59,710 INFO /business/company/advisors                        	47
+2020-06-18 09:12:59,710 INFO /people/ethnicity/geographic_distribution         	44
+2020-06-18 09:12:59,711 INFO /sports/sports_team_location/teams                	223
+2020-06-18 09:12:59,711 INFO /people/ethnicity/people                          	22
+2020-06-18 09:12:59,711 INFO --------------------------
+
