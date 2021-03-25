@@ -114,7 +114,7 @@ def train(config=None):
     best_score = [-1., 0, None, None]
     loop = config['first_loop_epoch'] if config['bootstrap'] else config['epoch']
 
-    logger.info('not bootstrap or first loop of bootstrap:{}'.format(loop))
+    logger.info('not iteration or first loop of iteration:{}'.format(loop))
     for epoch in range(loop):
 
         logger.info('***TRAIN: {}***'.format(epoch))
@@ -131,7 +131,7 @@ def train(config=None):
         logger.info('******\n')
 
     # for other loop
-    if config['bootstrap']:
+    if config['iteration']:
         logger.info('for other iteration loop')
 
         # update patterns
