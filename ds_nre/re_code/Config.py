@@ -30,9 +30,9 @@ flags.DEFINE_float("lr", 0.001, "Initial learning rate")
 flags.DEFINE_string("optimizer", "adam", "Optimizer for training")
 flags.DEFINE_boolean("zero", True, "Wither replace digits with zero")
 flags.DEFINE_boolean("lower", False, "Wither lower case")
-flags.DEFINE_boolean("redistribution", True, "Wither redistribution")
-flags.DEFINE_boolean("attention_regularization", True, "Wither attention regularization")
-flags.DEFINE_boolean("bootstrap", True, "Wither bootstrap")
+flags.DEFINE_boolean("positive_found", True, "Wither redistribution")
+flags.DEFINE_boolean("pattern_attention", True, "Wither attention regularization")
+flags.DEFINE_boolean("iteration", True, "Wither bootstrap")
 
 flags.DEFINE_boolean("pretrained_word", True, "use pretrained word")
 FLAGS = tf.app.flags.FLAGS
@@ -45,9 +45,9 @@ def get_config():
     config['type_dim'] = FLAGS.type_dim
     config['hidden_dim'] = FLAGS.lstm_dim
     config['pos_max'] = FLAGS.pos_max
-    config['redistribution'] = FLAGS.redistribution
-    config['attention_regularization'] = FLAGS.attention_regularization
-    config['bootstrap'] = FLAGS.bootstrap
+    config['positive_found'] = FLAGS.positive_found
+    config['pattern_attention'] = FLAGS.pattern_attention
+    config['iteration'] = FLAGS.iteration
     config['zero'] = FLAGS.zero
     config['lower'] = FLAGS.lower
     config['first_loop_epoch'] = FLAGS.first_loop_epoch
