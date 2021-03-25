@@ -132,7 +132,7 @@ def train(config=None):
 
     # for other loop
     if config['bootstrap']:
-        logger.info('for other bootstrap loop')
+        logger.info('for other iteration loop')
 
         # update patterns
         kls, patterns, labels = train_model.get_kls_patterns_labels(train_data_loader)
