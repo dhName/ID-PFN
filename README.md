@@ -16,11 +16,11 @@ pip install -r requirements.txt
 # Framework
 ####  Trainning (**I**terative **D**enoising Method)
 
-![image](https://user-images.githubusercontent.com/42259606/111864106-08c48d80-899a-11eb-949e-5c7066bca9e2.png)
+![image](https://user-images.githubusercontent.com/42259606/112608089-df51a900-8e54-11eb-9657-e47f162dc316.png)
 
 #### Neural Network（**P**attern **F**usion **N**etwork）
 
-![image](https://user-images.githubusercontent.com/42259606/111864294-feef5a00-899a-11eb-9c49-92f304938755.png)
+![image](https://user-images.githubusercontent.com/42259606/112608111-e5e02080-8e54-11eb-8475-bfd23360b722.png)
 
 
 # metric
