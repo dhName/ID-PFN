@@ -1,6 +1,15 @@
 # ID-PFN
 **I**terative **D**enoising Method with **P**attern **F**usion **N**etwork
 
+# Dirs
+--data: Distant Supervision Relation Extraction Data, includes train, dev, test.
+--ds_nre: ID-PFN method source code.
+--pattern_extrator: patterns which mined by unsupervised method and source code .
+--project: Django project.
+--static: css and icons.
+--templates: html pages.
+--word_vec: we use GloVe method to get word embeddings.
+
 # Requirements
 pip install -r requirements.txt
 
@@ -13,7 +22,7 @@ pip install -r requirements.txt
 * django==3.0.3
 
 
-# Framework
+# ID-PFN Framework
 ####  Trainning (**I**terative **D**enoising Method)
 
 ![image](https://user-images.githubusercontent.com/42259606/112608089-df51a900-8e54-11eb-9657-e47f162dc316.png)
