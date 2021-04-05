@@ -41,6 +41,15 @@ pip install -r requirements.txt
 
 ![image](https://user-images.githubusercontent.com/42259606/111864113-18dc6d00-899a-11eb-8c6b-da3866e23c58.png)
 
+
+# Systemn Interface
+We implement the ID+PFN method as system. 
+
+The first button is index page, the second is training parameters setting, the third is pattern which is mined by unsupervided method, the fourth is training model metrices, and the fifth is relation extraction prediction.
+
+![image](https://user-images.githubusercontent.com/42259606/113532232-7230d700-95fd-11eb-8016-8af738503c37.png)
+
+
 # Reference
 1. Neural Relation Extraction with Selective Attention over Instances. Yankai Lin, Shiqi Shen, Zhiyuan Liu, Huanbo Luan, Maosong Sun. ACL2016. [paper](http://www.aclweb.org/anthology/P16-1200)
 
