@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 
 # Systemn Interface
-We implement the ID+PFN method as system. 
+We implement the ID+PFN method to relation extraction system by Django which is a popular web project. 
 
 The first button is index page, the second is training parameters setting, the third is pattern which is mined by unsupervided method, the fourth is training model metrices, and the fifth is relation extraction prediction.
 
