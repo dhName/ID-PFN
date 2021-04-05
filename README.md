@@ -3,12 +3,19 @@
 
 # Dirs
 -- data: Distant Supervision Relation Extraction Data, includes train, dev, test.
+
 -- ds_nre: ID-PFN method source code.
+
 -- pattern_extrator: patterns which mined by unsupervised method and source code .
+
 -- project: Django project.
+
 -- static: css and icons.
+
 -- templates: html pages.
+
 -- word_vec: we use GloVe method to get word embeddings.
+
 
 # Requirements
 pip install -r requirements.txt
